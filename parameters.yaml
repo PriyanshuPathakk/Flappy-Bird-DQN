@@ -1,0 +1,11 @@
+flappybirdv0:
+  env_id: "FlappyBird-v0"
+  epsilon_init: 1.0
+  epsilon_min: 0.01
+  epsilon_decay: 0.99952       
+  replay_memory_size: 50000
+  mini_batch_size: 64
+  network_sync_rate: 1500      # Sync target weights every 1500 steps
+  alpha: 0.00025               # Smooth, slow learning rate to prevent divergence
+  gamma: 0.99
+  reward_thresh: 200
